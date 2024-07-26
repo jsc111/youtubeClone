@@ -3,8 +3,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YoutubeClone</title>
+
+  <style>
+    body{
+      background-color: black;
+      color: white;
+    }
+    .thumbnail{
+      width: 300px;
+      display: block;
+    }
+
+    .search-bar{
+      font-size: 20px;
+      display: block;
+    }
+
+    .video-preview{
+      width: 300px;
+
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      transition: box-shadow 0.25s, background-color 0.25s;
+    }
+
+    .video-preview:hover{
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .video-logo{
+      height: 40px;
+      width: 40px;
+      border-radius: 25px;
+      display: inline;
+    }
+    .video-details{
+      display: inline;
+    }
+    .video-details{
+      width: 260px;
+    }
+  </style>
+
 </head>
 <body>
+  <input class="search-bar" type="text" placeholder="Search">
+
+  <div class="video-preview">
+    <img class="thumbnail" src="images\outdoorBoys.webp" alt="outdoorBoys">
+  
+
+    <img class="video-logo" src="images\unnamed.jpg" alt="channel logo">
+    <div class="video-details">
+    <p class="video-title">7 Days Remote Camping, Fishing & Exploring Ketchikan Alaska</p>
+    <p class="video-author">Outdoor Boys &#9745</p>
+    <p class="video-stats">416K views &#183 6 hours ago</p>
+    </div>
+  </div>
+
+  <div class="video-preview">
+    <img class="thumbnail" src="images\f1.jpg" alt="FORMULA 1">
+  
+    <p class="video-title">Qualifying Highlights | 2024 Hungarian Grand Prix</p>
+    <p class="video-author">FORMULA 1 &#9745</p>
+    <p class="video-stats">450K views &#183 1 hour ago</p>
+  </div>
+
+  <div class="video-preview">
+    <img class="thumbnail" src="images\blackBodyBuilder.webp" alt="outdoorBoys">
+  
+    <p class="video-title">Every Calisthenics Skill to Learn in Order for your First Year </p>
+    <p class="video-author">STRIQfit</p>
+    <p class="video-stats">261K views &#183 3 weeks ago</p>
+  </div>
   
 </body>
 </html>
